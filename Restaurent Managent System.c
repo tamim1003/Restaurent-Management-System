@@ -1,3 +1,5 @@
+//Devlop By Tamim Khan
+
 #include <stdio.h>
 #include <windows.h>
 
