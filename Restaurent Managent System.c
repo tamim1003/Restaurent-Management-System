@@ -70,3 +70,21 @@ int menu_order()
     printf("\t10. Mirinda   ........................ 25/=\n");
     printf("\n\n\tOrder your dish: (Enter 0 to finish order)\n");
     for(;;)
+        {
+        counter++;
+        printf("\t Enter Food ID: ");
+        scanf("%d",&arID[counter-1]);
+        if(arID[counter-1]==0)
+        {
+            break;
+        }
+        printf("\t Enter Quantity: ");
+        scanf("%d",&arqty[counter-1]);
+
+    }
+    system("cls");
+    system("color F0");
+   printf("\n\n\n\n\n\n\n\n\n\n\t\tThanks for your order. We are getting ready the dishes.\n\t\tUntil then, have some selfies with friends. Enjoy!\n\n\n\n\n\t\t\t  <Enter 1 to check your bill>\n\t\t\tEnter your choice: ");
+
+    scanf("%d",&decision);
+    printf("\n\n\n\n\n\n\n\n");
