@@ -142,5 +142,23 @@ void Bill_show(int arID[],int arqty[],int counter)
     }
 
 }
+void Bill_Payment()
+{
 
+    int k,i,cash,changer,n;
+    redo:
+    payment_counter++;
+    system("cls");
+    system("color 3F");
+    printf("\n\n\n\t\t\tEnter your token number: ");
+    scanf("%d",&k);
+    printf("\t\t\tYour Total Bill is = %d",tokens[k]);
+    work:
+            printf("\n\t\t\tPay your bill: ");
+            scanf("%d",&cash);
+    changer = cash-tokens[k];
+    if(changer == 0)
+    {
+        printf("\n\t\tThanks for your payment. Have a great day!\n");
+    }
 
