@@ -1,2 +1,3 @@
 # Restaurent-Management-System
-C Project
+Capstone Project 
+
