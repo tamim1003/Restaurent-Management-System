@@ -161,4 +161,53 @@ void Bill_Payment()
     {
         printf("\n\t\tThanks for your payment. Have a great day!\n");
     }
+else if (changer<0)
+    {
+        system("cls");
+        printf("\n\t\t\tAmount is not sufficient. :(\n\t\tPlease pay the fair price of your bill\n");
+        goto work;
+    }
+    else
+    {
+        printf("\n\n\n\t\tHere is your change : (%d - %d) = %d Tk.\n\t\t  ",cash,tokens[k],changer);
 
+            for(i=0;i<19;i++)
+            {
+                printf("_");
+            }
+            if(changer>=1000 )
+                {printf("\n\t\t1000 Tk. note(s) = %d\n",changer/1000);
+                changer=changer%1000;}
+            if(changer>=500 && changer<1000)
+            {printf("\n\t\t 500 Tk. note(s) = %d\n",changer/500);
+            changer=changer%500;}
+            if(changer>=100 && changer<500)
+            {printf("\n\t\t 100 Tk. note(s) = %d\n",changer/100);
+            changer= changer%100;}
+            if(changer>=50 && changer<100)
+            {printf("\n\t\t  50 Tk. note(s) = %d\n",changer/50);
+            changer=changer%50;}
+             if(changer>=10 && changer<50)
+            {printf("\n\t\t  10 Tk. note(s) = %d\n",changer/10);
+            changer=changer%10;}
+            if(changer>=5 && changer<10)
+            {printf("\n\t\t   5 Tk. note(s) = %d\n",changer/5);
+            changer=changer%5;}
+            if(changer>=2 && changer<5)
+            {printf("\n\t\t   2 Tk. note(s) = %d\n",changer/2);
+            changer=changer%2;}
+            if(changer>=1 && changer<2)
+            {printf("\n\t\t   1 Tk. note(s) = %d\n",changer/1);
+            changer=changer%1;}
+
+            printf("\t\t  ");
+            for(i=0;i<19;i++)
+            {
+                printf("_");
+            }
+
+        printf("\n\n\n\n\n\t\t\tThanks for your payment.\n\t\t\t    Have a great day!\n",changer);
+
+
+
+    }
