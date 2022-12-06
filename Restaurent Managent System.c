@@ -88,3 +88,23 @@ int menu_order()
 
     scanf("%d",&decision);
     printf("\n\n\n\n\n\n\n\n");
+    
+     counter--;
+
+    if(decision==1)
+    {
+        Bill_show(arID,arqty,counter);
+    }
+
+    else if(decision==2)
+    {
+       goto work;
+    }
+
+    else if(decision==3)
+    {
+        main();
+    }
+
+}
+
