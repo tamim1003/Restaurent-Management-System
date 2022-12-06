@@ -31,8 +31,9 @@ int main_page()
     printf("      low cost..       *                                  *\n");
     printf("                       *                                  *\n");
     printf("     GRAB NOW !!       ");
-    
-     for (i=0;i<36;i++)
+
+
+    for (i=0;i<36;i++)
      {
         printf("*");
      }
@@ -70,7 +71,7 @@ int menu_order()
     printf("\t10. Mirinda   ........................ 25/=\n");
     printf("\n\n\tOrder your dish: (Enter 0 to finish order)\n");
     for(;;)
-        {
+    {
         counter++;
         printf("\t Enter Food ID: ");
         scanf("%d",&arID[counter-1]);
@@ -88,8 +89,8 @@ int menu_order()
 
     scanf("%d",&decision);
     printf("\n\n\n\n\n\n\n\n");
-    
-     counter--;
+
+    counter--;
 
     if(decision==1)
     {
@@ -107,6 +108,11 @@ int menu_order()
     }
 
 }
+
+
+
+
+
 void Bill_show(int arID[],int arqty[],int counter)
 {
 
@@ -142,6 +148,10 @@ void Bill_show(int arID[],int arqty[],int counter)
     }
 
 }
+
+
+
+
 void Bill_Payment()
 {
 
@@ -161,7 +171,7 @@ void Bill_Payment()
     {
         printf("\n\t\tThanks for your payment. Have a great day!\n");
     }
-else if (changer<0)
+    else if (changer<0)
     {
         system("cls");
         printf("\n\t\t\tAmount is not sufficient. :(\n\t\tPlease pay the fair price of your bill\n");
@@ -211,7 +221,7 @@ else if (changer<0)
 
 
     }
- printf("\n\n\t\t\t<Enter (1) to pay another bill.>\n\t\t\t<Enter (2) to go back main menu>\n\n\n\t\t\tEnter your choice: \t");
+    printf("\n\n\t\t\t<Enter (1) to pay another bill.>\n\t\t\t<Enter (2) to go back main menu>\n\n\n\t\t\tEnter your choice: \t");
         scanf("%d",&n);
         if(n==2)
         {
