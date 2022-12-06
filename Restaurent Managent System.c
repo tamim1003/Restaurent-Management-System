@@ -107,4 +107,40 @@ int menu_order()
     }
 
 }
+void Bill_show(int arID[],int arqty[],int counter)
+{
+
+    int n;
+    system("cls");
+    system("color B0");
+
+    int i,sum=0;
+    int costs[10]={120,40,70,90,90,65,65,230,25,25};
+    char items[10][16]={"Beef Burger","Hot Dog","Donuts","French Fries","Chicken Breast","Chicken Wings","Ice Cream","Sweets","Coca-Cola","Mirinda"};
+    printf("\n\nYour Bill:\n\n\n\t\tItem(s)\t\t     Quantity\t\t    Cost\n\n\n\n");
+
+    for(i=0;i<counter;i++)
+    {
+        printf("\t%2d. %-16s ________\t%-5d piece(s) ____ %7d\n",i+1,items[arID[i]-1],arqty[i],arqty[i]*costs[arID[i]-1]);
+        sum=sum+(costs[arID[i]-1]*arqty[i]);
+    }
+
+    printf("\n\n\n\n\t\t\t\t\t\t\t  Total = %d\n\n\n\n",sum);
+    token ++;
+    tokens[token]=sum;
+    printf("\tYour token number is %d. Use this token while paying the bill.\n\n\n\n\n\t\t\t<enter (1) to give another order>\n\n\t\t\t<enter (2) to go to the main menu>\n\n\t\n\t\t\tEnter your choice: ",token);
+    scanf("%d",&n);
+    printf("\n\n\n");
+    if(n==1)
+    {
+        menu_order();
+    }
+    else if(n==2)
+    {
+        main();
+
+    }
+
+}
+
 
