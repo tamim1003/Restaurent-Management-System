@@ -1,5 +1,3 @@
-//Devlop By Tamim Khan
-
 #include <stdio.h>
 #include <windows.h>
 
@@ -14,7 +12,7 @@ int main_page()
     system("cls");
     system("color b0");
 
-    printf("\n\n\n\n\n\t\t       <^>\n\t\t         `'*'  Welcome to Cafe SHOHAN \n\t\t\t\t\t\t\t`'*'<^>\n\n");
+    printf("\n\n\n\n\n\t\t       <^>\n\t\t         `'*'  Welcome to Cafe Rio \n\t\t\t\t\t\t\t`'*'<^>\n\n");
     printf("\n\n\n\n\t\t\t    food Good.All good. (^_^)\n\n                       ");
     for (i=0;i<36;i++)
      {
@@ -259,7 +257,7 @@ int main()
     {
         system("cls");
         system("color 30");
-        printf("\n\n\n\n\n\t\t       @@_@_\n\t\t         `'*'`  Cafe SHOHAN\n\t\t\t\t\t`'*'`-@@_@\n\n");
+        printf("\n\n\n\n\n\t\t       @@_@_\n\t\t         `'*'`  Cafe Rio\n\t\t\t\t\t`'*'`-@@_@\n\n");
         printf("\n\n\n\t\t\tThis session order recieved : %d\n\n",token);
         printf("\t\t\tThis session bill paid      : %d\n\n",payment_counter);
         if(payment_counter<token)
