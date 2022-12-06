@@ -13,7 +13,7 @@ int main_page()
     system("color b0");
 
     printf("\n\n\n\n\n\t\t       <^>\n\t\t         `'*'  Welcome to Cafe Rio \n\t\t\t\t\t\t\t`'*'<^>\n\n");
-    printf("\n\n\n\n\t\t\t    food Good.All good. (^_^)\n\n                       ");
+    printf("\n\n\n\n\t\t\t      food Good.All good. (^_^)\n\n                       ");
     for (i=0;i<36;i++)
      {
         printf("*");
