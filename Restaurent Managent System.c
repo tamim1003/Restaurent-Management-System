@@ -211,3 +211,52 @@ else if (changer<0)
 
 
     }
+ printf("\n\n\t\t\t<Enter (1) to pay another bill.>\n\t\t\t<Enter (2) to go back main menu>\n\n\n\t\t\tEnter your choice: \t");
+        scanf("%d",&n);
+        if(n==2)
+        {
+            main();
+        }
+        else if(n==1)
+        {
+           goto redo;
+        }
+
+}
+
+
+
+
+int main()
+ {
+
+    int k,j,n,d;
+    k = main_page();
+
+    if(k==1)
+    {
+        menu_order();
+    }
+
+    else if(k==2)
+    {
+        Bill_Payment();
+    }
+
+    else
+    {
+        system("cls");
+        system("color 30");
+        printf("\n\n\n\n\n\t\t       @@_@_\n\t\t         `'*'`  Cafe SHOHAN\n\t\t\t\t\t`'*'`-@@_@\n\n");
+        printf("\n\n\n\t\t\tThis session order recieved : %d\n\n",token);
+        printf("\t\t\tThis session bill paid      : %d\n\n",payment_counter);
+        if(payment_counter<token)
+        {printf("\t\t\t\tYet to pay          : %d\n\n\n\n\n\n",token-payment_counter);}
+        else
+        {
+            printf("\n\n\n\n\n\n");
+        }
+        return 0;
+    }
+
+ }
